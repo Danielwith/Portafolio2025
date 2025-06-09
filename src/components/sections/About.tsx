@@ -1,11 +1,11 @@
 import {
   GraduationCap,
   MapPin,
-  Briefcase,
   Rocket,
   Search,
   PencilRuler,
   Code,
+  Languages,
 } from "lucide-react";
 
 export function About() {
@@ -17,17 +17,18 @@ export function About() {
         </h2>
         <div className="flex md:flex-row flex-col items-center">
           <div className="mb-10 md:mb-0 md:pr-10 md:w-1/2 text-left">
-            <p className="mb-6 text-gray-700 text-lg">
-              Soy un desarrollador full stack con más de 5 años de experiencia
-              creando aplicaciones web modernas. Me especializo en JavaScript,
-              React y Node.js, pero siempre estoy aprendiendo nuevas
-              tecnologías.
+            <p className="mb-3 text-gray-700 text-lg">
+              Full‑Stack Web Developer con 2 años de experiencia en el
+              desarrollo de SPAs escalables con Angular, y experiencia
+              complementaria en React.
             </p>
             <p className="mb-6 text-gray-700 text-lg">
-              Creo en el diseño limpio, el código mantenible y las experiencias
-              de usuario intuitivas. Cada proyecto es una oportunidad para
-              resolver problemas reales con soluciones elegantes.
+              Entrego soluciones web mantenibles y centradas en la experiencia
+              del usuario, siguiendo principios de código limpio. Soy eficaz en
+              diagnosticar y solucionar problemas técnicos, colaborativo en
+              métodos ágiles y rápido en integrar tecnologías emergentes.
             </p>
+
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center bg-indigo-50 shadow-sm px-4 py-2 rounded-full text-indigo-700">
                 <GraduationCap className="mr-2 h-4 w-4 inline" />
@@ -38,8 +39,8 @@ export function About() {
                 Lima, Peru
               </div>
               <div className="flex items-center bg-indigo-50 shadow-sm px-4 py-2 rounded-full text-indigo-700">
-                <Briefcase className="mr-2 h-4 w-4 inline" />
-                Disponible
+                <Languages className="mr-2 h-4 w-4 inline" />
+                Ingles Intermedio
               </div>
             </div>
           </div>
