@@ -12,11 +12,11 @@ export function About() {
   return (
     <section id="sobre-mi" className="bg-white py-20">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <h2 className="mb-16 font-bold text-3xl text-center section-title">
+        <h2 className="mb-6 font-bold text-3xl text-center section-title">
           Sobre mí
         </h2>
         <div className="flex md:flex-row flex-col items-center">
-          <div className="mb-10 md:mb-0 md:pr-10 md:w-1/2">
+          <div className="mb-10 md:mb-0 md:pr-10 md:w-1/2 text-left">
             <p className="mb-6 text-gray-700 text-lg">
               Soy un desarrollador full stack con más de 5 años de experiencia
               creando aplicaciones web modernas. Me especializo en JavaScript,
@@ -29,15 +29,15 @@ export function About() {
               resolver problemas reales con soluciones elegantes.
             </p>
             <div className="flex flex-wrap gap-4">
-              <div className="bg-indigo-50 shadow-sm px-4 py-2 rounded-full text-indigo-700">
+              <div className="flex items-center bg-indigo-50 shadow-sm px-4 py-2 rounded-full text-indigo-700">
                 <GraduationCap className="mr-2 h-4 w-4 inline" />
                 Ing. en Sistemas
               </div>
-              <div className="bg-indigo-50 shadow-sm px-4 py-2 rounded-full text-indigo-700">
+              <div className="flex items-center bg-indigo-50 shadow-sm px-4 py-2 rounded-full text-indigo-700">
                 <MapPin className="mr-2 h-4 w-4 inline" />
-                Buenos Aires, AR
+                Lima, Peru
               </div>
-              <div className="bg-indigo-50 shadow-sm px-4 py-2 rounded-full text-indigo-700">
+              <div className="flex items-center bg-indigo-50 shadow-sm px-4 py-2 rounded-full text-indigo-700">
                 <Briefcase className="mr-2 h-4 w-4 inline" />
                 Disponible
               </div>
@@ -47,7 +47,7 @@ export function About() {
             <h3 className="flex items-center mb-6 font-semibold text-indigo-600 text-xl">
               <Rocket className="mr-3 h-5 w-5" /> Mi metodología
             </h3>
-            <div className="space-y-6">
+            <div className="space-y-6 text-left">
               <div className="flex items-start">
                 <div className="bg-indigo-100 mr-4 p-3 rounded-lg">
                   <Search className="text-indigo-600 h-5 w-5" />

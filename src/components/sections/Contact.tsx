@@ -1,14 +1,9 @@
-import { Plane as PaperPlane, Download } from "lucide-react";
-// import {
-//   LinkedInLogoIcon,
-//   GitHubLogoIcon,
-//   TwitterLogoIcon,
-//   InstagramLogoIcon,
-// } from "@radix-ui/react-icons";
+import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { TbSend } from "react-icons/tb";
 
 export function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
@@ -53,7 +48,7 @@ export function Contact() {
                 type="submit"
                 className="flex justify-center items-center bg-indigo-600 hover:bg-indigo-700 py-3 rounded-lg w-full font-medium text-white transition duration-300"
               >
-                <PaperPlane className="mr-2 h-4 w-4" /> Enviar mensaje
+                <TbSend className="mr-2 h-4 w-4" /> Enviar mensaje
               </Button>
             </form>
           </div>
@@ -94,7 +89,7 @@ export function Contact() {
 
             <div className="mt-8">
               <h4 className="mb-4 font-medium text-gray-900">Redes sociales</h4>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 justify-center">
                 <Button
                   variant="outline"
                   size="icon"

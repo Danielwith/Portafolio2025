@@ -43,7 +43,7 @@ export function Footer() {
               ))}
             </div>
             <p className="text-indigo-200 text-sm">
-              © {new Date().getFullYear()} Portafolio Web. Todos los derechos
+              © {new Date().getFullYear()} Danielwith. Todos los derechos
               reservados.
             </p>
           </div>

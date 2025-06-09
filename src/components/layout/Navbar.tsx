@@ -38,7 +38,8 @@ export function Navbar() {
     if (targetElement) {
       window.scrollTo({
         top:
-          targetElement.getBoundingClientRect().top + window.pageYOffset - 80,
+          targetElement.getBoundingClientRect().top +
+          (href === "#inicio" ? 0 : window.pageYOffset - 20),
         behavior: "smooth",
       });
 
@@ -61,10 +62,10 @@ export function Navbar() {
           <div className="flex items-center">
             <span className="flex items-center font-bold text-indigo-600 text-xl">
               <Code className="mr-2 text-indigo-500" size={24} />
-              DaniDev
+              Daniel Orosco
             </span>
           </div>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
@@ -76,7 +77,7 @@ export function Navbar() {
               </a>
             ))}
           </div>
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center scale-150">
             <Button
               variant="ghost"
               size="icon"
@@ -92,8 +93,8 @@ export function Navbar() {
       {/* Mobile menu */}
       <div
         className={cn(
-          "md:hidden bg-white shadow-lg px-4 pb-3 transition-all duration-300",
-          mobileMenuOpen ? "block" : "hidden"
+          "lg:hidden bg-white shadow-lg px-4 pb-3 transition-all duration-300 absolute w-full overflow-hidden size-keywords",
+          mobileMenuOpen ? "h-auto" : "h-0 p-0"
         )}
       >
         {NAV_LINKS.map((link) => (

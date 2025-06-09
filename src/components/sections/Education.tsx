@@ -1,4 +1,5 @@
-import { GraduationCap, Award } from "lucide-react";
+import { RiGraduationCapFill } from "react-icons/ri";
+import { TbAwardFilled } from "react-icons/tb";
 
 type EducationItemProps = {
   title: string;
@@ -19,9 +20,9 @@ function EducationItem({
     <div className="timeline-item">
       <div className="timeline-dot">
         {icon === "graduation" ? (
-          <GraduationCap size={10} />
+          <RiGraduationCapFill size={14} />
         ) : (
-          <Award size={10} />
+          <TbAwardFilled size={14} />
         )}
       </div>
       <div className="pl-8">
@@ -37,33 +38,33 @@ function EducationItem({
 export function Education() {
   const educationItems: EducationItemProps[] = [
     {
-      title: "Ingeniería en Sistemas de Información",
-      institution: "Universidad Tecnológica Nacional",
-      period: "2015 - 2020 | Buenos Aires, Argentina",
+      title: "Ingeniería de Sistemas",
+      institution: "Universidad Peruana de Ciencias Aplicadas",
+      period: "2024 - Actualidad | Lima, Perú",
       description:
-        "Especialización en desarrollo de software y arquitectura de sistemas. Graduado con honores.",
+        "Especialización en desarrollo de software y arquitectura de sistemas.",
       icon: "graduation",
     },
     {
-      title: "Especialización en Inteligencia Artificial",
-      institution: "Universidad de Buenos Aires",
-      period: "2018 - 2019 | Buenos Aires, Argentina",
+      title: "Técnico en Computación e Informática",
+      institution: "Instituto Superior Tecnológico Cibertec",
+      period: "2020 - 2023 | Lima, Perú",
       description:
-        "Programa avanzado enfocado en aprendizaje automático, redes neuronales y procesamiento de lenguaje natural.",
-      icon: "certificate",
+        "Desarrollo de habilidades en programación avanzada, bases de datos, servicios web y calidad de software.",
+      icon: "graduation",
     },
+    // {
+    //   title: "Full Stack Web Developer",
+    //   institution: "Platzi & Udemy",
+    //   period: "2021 | Cursos en línea",
+    //   description:
+    //     "Programa intensivo de 6 meses con proyectos prácticos en JavaScript, React, Node.js y bases de datos.",
+    //   icon: "certificate",
+    // },
     {
-      title: "Full Stack Web Developer",
-      institution: "Platzi & Udemy",
-      period: "2021 | Cursos en línea",
-      description:
-        "Programa intensivo de 6 meses con proyectos prácticos en JavaScript, React, Node.js y bases de datos.",
-      icon: "certificate",
-    },
-    {
-      title: "Diseño UX/UI Avanzado",
-      institution: "Interaction Design Foundation",
-      period: "2022 | Cursos en línea",
+      title: "Web Design y Diseño UX/UI",
+      institution: "Calarts",
+      period: "2024 | Cursos en línea",
       description:
         "Curso especializado en investigación de usuarios, diseño de interfaces y pruebas de usabilidad.",
       icon: "certificate",
